@@ -1,3 +1,5 @@
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +13,53 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  background-color: rgb(35,160,360);
+}
+
+.incio {
+  background-color: rgb(35,160,255);
+  /*color: rgb(35,160,360);*/
+}
+
+.text-white.text-center {
+  color: #fff!important;
+}
+
+.container.text-center {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.img-fluid.d-block.mx-auto.mb-4.size {
+  width: 180px;
+  border-radius: 20px;
+}
+
+.star-light {
+  border-top: 5px dotted white;
+  width: 50%;
+}
+
+.navbar-light .navbar-toggler {
+  background-color: white;
+  z-index: 10000;
+}
+
+.navbar-light .navbar-toggler-icon {
+  border-color: white;
+  color: white;
+}
+
+.sr-only.colorinside {
+  /*background-color: white;*/
+  color: initial;
+  border-color: inherit;
+}
+
+.btn.btn-primary.d-none.d-inline-block {
+  float: right;
+  border-radius: 8px;
+}
+
