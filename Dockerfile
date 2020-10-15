@@ -6,12 +6,10 @@ RUN npm install
 
 RUN npm run build
 
-FROM debian:stable-slim
+FROM nginx:latest as deployer
 
-RUN apt-get update && apt-get -y install nodejs && apt-get -y install npm
+COPY --from=builder /build /usr/share/nginx/html
 
-RUN npm install -g serve
+EXPOSE 80
 
-COPY --from=builder /build ./build
-
-CMD ["serve", "-s", "build"]
+CMD ["nginx", "-g", "daemon off;"]
