@@ -7,7 +7,7 @@ const Overview = () => {
   
   <div className="container" style={{paddingTop: "14px"}}>
         <div style={{paddingBottom: "5px"}}>
-            <h3 className="text-dark mb-0 d-inline-block">Overview</h3><button className="btn btn-primary d-none d-inline-block" type="button" style={{padding: "4px;"}}>See more</button></div>
+            <h3 className="text-dark mb-0 d-inline-block">Overview</h3><button className="btn btn-primary d-none d-inline-block" type="button" style={{padding: "4px"}}>See more</button></div>
         <div className="row">
             <div className="col col-md-4 mb-4" style={{paddingTop: "13px"}}>
                 <div className="card shadow border-left-primary py-2" style={{margin: "0px"}}>

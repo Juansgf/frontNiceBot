@@ -4,10 +4,10 @@ import {
   BrowserRouter,
   Switch,
   Route,
-  Link
 } from "react-router-dom"
 
 import Landing from './components/Landing'
+import Tweet from './components/Tweet'
 
 function App() {
   return (
@@ -17,8 +17,8 @@ function App() {
             <Route exact path="/">
             <Landing/>  
             </Route>
-            <Route exact path="/about">
-              
+            <Route exact path="/tweet">
+             <Tweet/>
             </Route>
           </Switch>
       
