@@ -81,6 +81,8 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   border-radius: 25px;
   border-width: 0px;
   color:white;
+  opacity: 0.8;
+  font-size: 30px;
 }
 
 .middle-button {
@@ -92,6 +94,8 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   border-radius: 25px;
   border-width: 0px;
   color:white;
+  opacity: 0.8;
+  font-size: 30px;
 }
 
 .last-button {
@@ -102,6 +106,8 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   border-radius: 25px;
   border-width: 0px;
   color:white;
+  opacity: 0.8;
+  font-size: 30px;
 }
 
 .hr-tweet {
