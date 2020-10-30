@@ -11,17 +11,17 @@ import Tweet from './components/Tweet'
 
 function App() {
   return (
+    
     <BrowserRouter>
-      
+
           <Switch>
-            <Route exact path="/">
-            <Landing/>  
-            </Route>
-            <Route exact path="/tweet">
-             <Tweet/>
-            </Route>
+            <Route exact path="/" component={Landing} />
+
+
+            <Route exact path="/tweet" component={Tweet} />
+
           </Switch>
-      
+
     </BrowserRouter>
   );
 }

@@ -5,8 +5,9 @@ import Navbar from '../components/Navbar'
 
 
 const Landing = () => {
+  
   return (
-  <div> 
+  <div>
 <Navbar/>
 <header className="text-white text-center">
 <div className="container text-center"><img className="img-fluid d-block mx-auto mb-4 size" src={require('../img/logo.jpg')}/>
@@ -16,9 +17,9 @@ const Landing = () => {
 </div>
 </header>
 <Overview/>
-</div> 
+</div>
 
   )
 }
 
-export default Landing; 
+export default Landing;

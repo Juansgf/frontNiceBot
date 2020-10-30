@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from "react-router-dom"
 
-const Navbar = () => {
+const Navbar = () => { 
   return (
-  <div> 
+  <div>
     <nav className="navbar navbar-light navbar-expand-md" style={{background: "rgb(23,32,42)"}}>
-    <div className="container-fluid"><Link to="/"><a className="navbar-brand font-weight-bold" style={{color: "#ffffff"}}>NiceBot</a></Link><button data-toggle="collapse" className="navbar-toggler" data-target="#navcol-1"><span className="sr-only colorinside"></span><span className="navbar-toggler-icon spancolor"></span></button>
+    <div className="container-fluid"><Link to ="/" ><a className="navbar-brand font-weight-bold" style={{color: "#ffffff"}}>NiceBot</a></Link><button data-toggle="collapse" className="navbar-toggler" data-target="#navcol-1"><span className="sr-only colorinside"></span><span className="navbar-toggler-icon spancolor"></span></button>
         <div
             className="collapse navbar-collapse" id="navcol-1">
             <ul className="nav navbar-nav ml-auto">
@@ -21,4 +21,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar; 
+export default Navbar;
