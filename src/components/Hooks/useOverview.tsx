@@ -19,12 +19,12 @@ const useOverview = () => {
         let response = await client.query({
           query: gql`
             {
-              countTweetsByWord(word: "zorra")
+              countTweets
             }
           `,
         });
 
-        setAnswer(response.data.countTweetsByWord);
+        setAnswer(response.data.countTweets);
       } catch (error) {
         setError(error);
       }
