@@ -6,10 +6,6 @@ import useOverview from "./Hooks/useOverview";
 const Overview = () => {
   const { answer, error, isLoading } = useOverview();
 
-  console.log("ANSWER", answer);
-  console.log("ERROR", error);
-  console.log("ISLOADING", isLoading);
-
   return (
     <div className="container" style={{ paddingTop: "14px" }}>
       <div style={{ paddingBottom: "5px" }}>

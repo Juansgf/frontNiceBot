@@ -2,13 +2,15 @@ import { useState, useEffect } from "react";
 import { gql } from "@apollo/client";
 import { ApolloClient, InMemoryCache } from "@apollo/client";
 
+import data from "../../db/data";
+
 const client = new ApolloClient({
   uri: "http://localhost:4000/graphql",
   cache: new InMemoryCache(),
 });
 
-const useOverview = () => {
-  const [answer, setAnswer] = useState(0);
+const useTweet = () => {
+  const [tweet, setTweet] = useState("");
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -16,15 +18,17 @@ const useOverview = () => {
     const fetchData = async () => {
       setIsLoading(true);
       try {
+        const rand = Math.floor(Math.random() * data.length);
         let response = await client.query({
           query: gql`
             {
-              countTweetsByWord(word: "zorra")
+              getTweet(id: "${data[rand]}") {
+                Content
+              }
             }
           `,
         });
-
-        setAnswer(response.data.countTweetsByWord);
+        setTweet(response.data.getTweet.Content);
       } catch (error) {
         setError(error);
       }
@@ -32,7 +36,7 @@ const useOverview = () => {
     };
     fetchData();
   }, []);
-  return { answer, error, isLoading };
+  return { tweet, error, isLoading, setTweet };
 };
 
-export default useOverview;
+export default useTweet;
