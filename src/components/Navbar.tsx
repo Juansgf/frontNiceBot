@@ -35,9 +35,11 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" style={{ color: "#ffffff" }}>
-                  Statistics
-                </a>
+                <Link to="/stats">
+                  <a className="nav-link" style={{ color: "#ffffff" }}>
+                    Statistics
+                  </a>
+                </Link>
               </li>
               <li className="nav-item">
                 <Link to="/tweet">

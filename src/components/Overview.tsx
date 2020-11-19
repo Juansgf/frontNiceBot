@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import * as Icon from "react-bootstrap-icons";
-
+import { Link } from "react-router-dom";
 import useOverview from "./Hooks/useOverview";
 
 const Overview = () => {
@@ -10,13 +10,15 @@ const Overview = () => {
     <div className="container" style={{ paddingTop: "14px" }}>
       <div style={{ paddingBottom: "5px" }}>
         <h3 className="text-dark mb-0 d-inline-block">Overview</h3>
-        <button
-          className="btn btn-primary d-none d-inline-block"
-          type="button"
-          style={{ padding: "4px" }}
-        >
-          See more
-        </button>
+          <Link to="/stats">
+            <button
+              className="btn btn-primary d-none d-inline-block"
+              type="button"
+              style={{ padding: "4px" }}
+            >
+              See more
+            </button>
+          </Link>
       </div>
       <div className="row">
         <div className="col col-md-4 mb-4" style={{ paddingTop: "13px" }}>

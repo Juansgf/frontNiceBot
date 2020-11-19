@@ -7,6 +7,7 @@ import Landing from "./components/Landing";
 import Tweet from "./components/Tweet";
 import Navbar from "./components/Navbar";
 import Overview from "./components/Overview";
+import Stats from "./components/Stats"
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           )}
         />
         <Route exact path="/tweet" component={Tweet} />
+        <Route exact path="/stats" component={Stats} />
       </Switch>
     </BrowserRouter>
   );
